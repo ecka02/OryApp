@@ -176,7 +176,7 @@ export default function ScanCode() {
       </div>
 
       <div className={viewMdLg === true ? "bg-red-900 md:flex  md:flex-auto" : "bg-red-900 hidden  md:flex-auto"}>
-        <div className={riceDataExists == true ? "flex w-full flex-col p-6 rounded-lg" : "hidden"}>
+        <div className={riceDataExists === true ? "flex w-full flex-col p-6 rounded-lg" : "hidden"}>
           <div className="bg-yellow-400 flex  ">
             <header className="  bg-red-600">
               <h1 className="text-3xl font-bold text-sprBlack opacity-80 p-2">
@@ -191,9 +191,9 @@ export default function ScanCode() {
               <div className="bg-pink-600 h-1/2 w-full p-3">
                 <div className="bg-yellow-400 h-full">image</div></div>
               <div className="bg-pink-300 h-3/4 w-full">
-                <h1>{currentData.accessionId}</h1>
-                <p>Season: {currentData.riceSeason} Season</p>
-                <p>Year: {currentData.riceYear}</p>
+                <h1 className="text-3xl font-semibold text-sprPrimary">{currentData.accessionId}</h1>
+                <p className="text-sm font-normal text-sprPrimaryLight">Season: {currentData.riceSeason} Season</p>
+                <p className="text-sm font-normal text-sprPrimaryLight">Year: {currentData.riceYear}</p>
               </div>
             </div>
             <main className="bg-green-600 w-3/4">
@@ -231,9 +231,9 @@ export default function ScanCode() {
               <div className="bg-pink-600  w-1/2 p-3">
                 <div className="bg-yellow-400 h-full">image</div></div>
               <div className="bg-pink-300 flex flex-col flex-auto">
-                <h1>{currentData.accessionId}</h1>
-                <p>Season: {currentData.riceSeason} Season</p>
-                <p>Year: {currentData.riceYear}</p>
+                <h1 className="text-3xl font-semibold text-sprPrimary">{currentData.accessionId}</h1>
+                <p className="text-sm font-normal text-sprPrimaryLight">Season: {currentData.riceSeason} Season</p>
+                <p className="text-sm font-normal text-sprPrimaryLight">Year: {currentData.riceYear}</p>
               </div>
             </div>
             <div className="bg-green-600 w-full flex-auto">
